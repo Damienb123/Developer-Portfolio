@@ -34,7 +34,7 @@ function Projects() {
           src={smolagent}
           link="https://github.com/Damienb123/smolagent-training-model"
           h3="AI-Training Model"
-          p="SmolAgents AI Training Model"
+          p="Smolagent AI Training Model"
         />
          <ProjectCard
           src={loginscreen}
