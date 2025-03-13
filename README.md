@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 # Portfolio Design
-This is a personal portfolio designed to showcase my skills and experience upon what a traditional resume with show.
+This is a personal portfolio designed to showcase my skills and experience upon what a traditional resume will show.
 
 # What the Portfolio Includes
 - Hero section - showing a call to action introducing myself as well as a mission statement, and separate image links to my Github and Linkedin.
