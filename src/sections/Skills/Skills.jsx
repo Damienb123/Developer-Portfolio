@@ -31,7 +31,7 @@ function Skills() {
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="SQL" />
         <SkillList src={checkMarkIcon} skill="MySQL Server/Workbench" />
-        <SkillList src={checkMarkIcon} skill="Mongo" />
+        <SkillList src={checkMarkIcon} skill="MongoDB" />
         <SkillList src={checkMarkIcon} skill="NoSQL" />
         <SkillList src={checkMarkIcon} skill="Firebase" />
         </div>
