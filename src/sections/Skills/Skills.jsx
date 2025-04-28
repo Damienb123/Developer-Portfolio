@@ -7,7 +7,9 @@ import { useTheme } from '../../common/ThemeContext';
 function Skills() {
   const { theme } = useTheme();
   const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
-
+{/* Updates:
+  - Removing MongoDB
+  - Adding Project Management skills as a new layer to showcasing */}
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
@@ -31,10 +33,15 @@ function Skills() {
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="SQL" />
         <SkillList src={checkMarkIcon} skill="MySQL Server/Workbench" />
-        <SkillList src={checkMarkIcon} skill="MongoDB" />
         <SkillList src={checkMarkIcon} skill="NoSQL" />
         <SkillList src={checkMarkIcon} skill="Firebase" />
         </div>
+       <hr />
+       <div className={styles.skillList}>
+        <SkillList src={checkMarkIcon} skill="JIRA" /> 
+        <SkillList src={checkMarkIcon} skill="Agile Workflows" />
+        <SkillList src={checkMarkIcon} skill="Notion" />
+      </div>
       <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="Smolagents" />
@@ -45,6 +52,7 @@ function Skills() {
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="Figma/FigJam" />
         <SkillList src={checkMarkIcon} skill="Adobe Express" />
+        <SkillList src={checkMarkIcon} skill="Adobe Indesign"/>
       </div>
     </section>
   );
