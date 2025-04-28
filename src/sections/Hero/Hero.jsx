@@ -6,7 +6,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/Damien A. Beltran My Resume.pdf';
+import CV from '../../assets/Resume.pdf'; // Updated import to Resume.pdf
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -40,7 +40,7 @@ function Hero() {
         <h2>
           Senior Computer Science Student at UTSA,
           <br />
-          Previous Full-Stack Software Engineer Intern
+          Current Full-Stack Software Engineer Intern
         </h2>
         <span>
           <a href="https://github.com/Damienb123" target="_blank">
