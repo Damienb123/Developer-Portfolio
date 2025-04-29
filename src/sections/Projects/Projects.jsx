@@ -1,5 +1,7 @@
 import styles from './ProjectsStyles.module.css';
 import smolagent from '../../assets/smolagent.png';
+import loginscreen from '../../assets/Loginscreen.png'; // Saved for displaying UX design
+import soundwave from '../../assets/SoundWavelogo.png'; // Saved for displaying UX design
 import linerenderer from '../../assets/LineRenderingApp.png';
 import ProjectCard from '../../common/ProjectCard';
 import developerjourney from '../../assets/DevelopersJourney.png';
@@ -13,13 +15,19 @@ import UXresearchstudy from '../../assets/UXresearchstudy.png'; // New import fo
 import Mealswipes from '../../assets/Mealswipes.png'; // New import for Mealswipes
 import FoodieMockup from '../../assets/FoodieMockup.png'; // New import for Foodie mockup
 import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png'; // New import for LePal.ai new feature
-import loginscreen from '../../assets/Loginscreen.png'; // Saved for displaying UX design
-import soundwave from '../../assets/SoundWavelogo.png'; // Saved for displaying UX design
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Software Development Projects</h1>
+      {/*Adding symetrically vertical alignment between the SD and UX containers*/}
+      <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Software Development Projects</h1>
+      {/*Implementing a visionary description of software development processes, description styling is integrated*/}
+      <p className={styles.description} style={{ marginBottom: '2rem' }}>
+    I am passionate about building scalable, maintainable software with an emphasis on teamwork and clear communication. 
+    As a software developer, I prioritize clean architecture, efficient collaboration, and thoughtful UX design to create 
+    seamless, user-centric experiences. Below are highlights of my work in software development and UX design.
+  </p>
+    
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={foodie}
@@ -58,13 +66,19 @@ function Projects() {
           p="MySQL Database for Recipe Organizer"
         />
       </div>
-
       {/* Updates:
       - Adding the UX Projects section
       - Displaying relevant projects
       - Users can view prototypes and case study interactively
       - Added whitespace of 8rem between the two sections */}
-      <h1 className="sectionTitle" style={{ marginTop: '8rem' }} >UX Projects</h1>
+      {/*Adding symetrically vertical alignment between the SD and UX containers*/}
+      <h1 className="sectionTitle" style={{ marginTop: '8rem', marginBottom: '2rem' }} >UX Projects</h1>
+      {/*Implementing a visionary description of UX Design philosophy, description styling is integrated*/}
+      <p className={styles.description} style={{ marginBottom: '2rem' }}>
+  I strive to make design more than just visual — it should feel personal, resonate deeply, and enhance everyday experiences. 
+  My UX philosophy bridges the gap between function and emotion, creating interfaces and visuals that are not only beautiful 
+  but also impactful. Below are examples of my work in UX research, design prototyping, and user-centered innovation.
+</p>
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={personallogo}
@@ -109,4 +123,3 @@ function Projects() {
 }
 
 export default Projects;
-
