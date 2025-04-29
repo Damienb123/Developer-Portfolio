@@ -42,7 +42,18 @@
   max-width: 800px;
   margin: 2rem auto;
   font-size: 1.1rem;
-  color: #ffffff;
   line-height: 1.6;
   text-align: center;
+  transition: color 0.3s ease-in-out;
 }
+
+/* Light mode */
+.light .description {
+  color: #333333; /* Dark text for light background */
+}
+
+/* Dark mode */
+.dark .description {
+  color: #ffffff; /* Light text for dark background */
+}
+
