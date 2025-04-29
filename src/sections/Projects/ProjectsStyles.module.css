@@ -37,3 +37,12 @@
     padding: 0 30px;
   }
 }
+
+.description {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: center;
+}
