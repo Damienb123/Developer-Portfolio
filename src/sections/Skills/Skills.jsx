@@ -44,7 +44,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Notion" />
       </div>
       <hr />
-      <div className={styles.skillList}
+      <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="RAG" />
         <SkillList src={checkMarkIcon} skill="Smolagents" />
         <SkillList src={checkMarkIcon} skill="LlamaIndex" />
