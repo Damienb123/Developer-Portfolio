@@ -40,7 +40,7 @@ function Hero() {
         <h2>
           Senior Computer Science Student at UTSA,
           <br />
-          Current Full-Stack Software Engineer Intern
+          Previous Full-Stack Software Engineer Intern
         </h2>
         <span>
           <a href="https://github.com/Damienb123" target="_blank">
