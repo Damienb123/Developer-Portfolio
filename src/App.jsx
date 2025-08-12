@@ -5,10 +5,11 @@ import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills/Skills';
 import { Analytics } from '@vercel/analytics/react';
 
+
 function App() {
   return (
+     <Analytics />
     <>
-      <Analytics />
       <Hero />
       <Projects />
       <Skills />
@@ -18,6 +19,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
