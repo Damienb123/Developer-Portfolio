@@ -6,16 +6,19 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --course-card-bg: #f0f0f0;
 }
 
 [data-theme='dark'] {
-  --background-color: #222;
+  --background-color: #000000;
   --btn-color: #fff;
-  --btn-text-color: #222;
-  --project-card-bg: #fff;
+  --btn-text-color: #000000;
+  --project-card-bg: #000000;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --courseListContainer: #fff;
+  --course-card-bg: #fff;
 }
 
 body {
