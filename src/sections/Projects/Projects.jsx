@@ -15,7 +15,7 @@ import UXresearchstudy from '../../assets/UXresearchstudy.png'; // New import fo
 import Mealswipes from '../../assets/Mealswipes.png'; // New import for Mealswipes
 import FoodieMockup from '../../assets/FoodieMockup.png'; // New import for Foodie mockup
 import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png'; // New import for LePal.ai new feature
-import { Link } from 'react-router-dom';
+
 
 
 function Projects() {
@@ -147,4 +147,5 @@ function Projects() {
 }
 
 export default Projects;
+
 
