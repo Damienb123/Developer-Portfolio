@@ -8,7 +8,7 @@
   min-height: 500px;
 
   .hero {
-  max-width: 150px; /* smaller than before */
+  max-width: 130px; /* smaller than before */
   border-radius: 50%; /* makes it a perfect circle */
   height: 26rem;
   }
@@ -104,5 +104,6 @@
     }
   }
 }
+
 
 
