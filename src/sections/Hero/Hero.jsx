@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/profile-img.png';
+import heroImg from '../../assets/image.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -62,4 +62,5 @@ function Hero() {
 }
 
 export default Hero;
+
 
