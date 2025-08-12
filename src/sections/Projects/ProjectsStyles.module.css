@@ -4,10 +4,12 @@
   text-align: center;
 
   img {
-    max-width: 250px;
+    max-width: 280px;
+    max-height: 280px;
     align-self: center;
     background-color: var(--project-card-bg);
     border-radius: 20px;
+    height: 13rem;
   }
 
   a {
@@ -21,20 +23,172 @@
     transform: scale(1.05);
   }
 }
-
-.projectsContainer {
+.ux-button {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  justify-content: center;      /* Center vertically within the page */
+  align-items: center;          /* Center horizontally */
+  height: 100vh;                /* Full screen height */
+  width: 100%;                 /* Full width */
+  gap: 4rem;
+}
+
+button {
+    margin: 13px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border-radius: 20px;
+    width: 190px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+
+.courseListContainer {
+  background-color: var(--course-card-bg);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(188, 188, 188, 0.725);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.courseListTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  transition: color 0.3s ease-in-out;
+  font-family: 'Inter', sans-serif;
+}
+
+.courseList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.courseList li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Light/Dark support */
+.light .courseListContainer {
+  background-color: #f9f9f9;
+  
+}
+
+.dark .courseListContainer {
+  background-color: #222;
+}
+
+.light .courseList li {
+  background-color: #ffffff;
+  color: #222;
+}
+
+.dark .courseList li {
+  background-color: #333;
+  color: #fff;
+}
+
+.light .courseListTitle {
+  color: #222;
+}
+
+.dark .courseListTitle {
+  color: #fff;
 }
 
 @media (width >= 800px) {
   .projectsContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     padding: 0 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+  }
+
+  .projectCard {
+    background-color: var(--project-card-bg); /* optional */
+    border-radius: 16px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+
+  .projectCard:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (width >= 1024px) {
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  
+  }
+
+  .projectCard {
+    background-color: var(--project-card-bg); /* optional */
+    border-radius: 16px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+
+  .projectCard:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (width >= 1440px) {
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+  }
+
+  .projectCard {
+    background-color: var(--project-card-bg); /* optional */
+    border-radius: 16px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+
+  .projectCard:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -45,6 +199,7 @@
   line-height: 1.6;
   text-align: center;
   transition: color 0.3s ease-in-out;
+  font-family: 'Manrope', sans-serif;
 }
 
 /* Light mode */

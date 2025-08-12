@@ -16,9 +16,32 @@ import Mealswipes from '../../assets/Mealswipes.png'; // New import for Mealswip
 import FoodieMockup from '../../assets/FoodieMockup.png'; // New import for Foodie mockup
 import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png'; // New import for LePal.ai new feature
 
+
+
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
+      <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Academic Journey</h1>
+      {/*Current Course Schedule*/}
+     <div className={styles.courseListContainer}>
+      <h2 className={styles.courseListTitle}>Summer 2025 Course Schedule</h2>
+      <ul className={styles.courseList}>
+        <li>CS 3113 - Principles of CyberSecurity</li>
+        <li>CS 3753 - Data Science</li>
+        <li>CS 4413 - Web Technologies</li>
+      </ul>
+    </div>
+       {/*Current Course Schedule*/}
+     <div className={styles.courseListContainer}>
+      <h2 className={styles.courseListTitle}>Fall 2025 Course Schedule</h2>
+      <ul className={styles.courseList}>
+        <li>CS 4423 - Game Development</li>
+        <li>CS 4673 - Cyber Operations</li>
+        <li>CS 4953 - CodePath Tech Interview Prep</li>
+        <li>CS 4913 - Independent Study "LLM and Data Managment"</li>
+        <li>SOC 3323 - Intro to Social Research</li>
+      </ul>
+    </div>
       {/*Adding symetrically vertical alignment between the SD and UX containers*/}
       <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Software Development Projects</h1>
       {/*Implementing a visionary description of software development processes, description styling is integrated*/}
@@ -75,7 +98,7 @@ function Projects() {
       <h1 className="sectionTitle" style={{ marginTop: '8rem', marginBottom: '2rem' }} >UX Projects</h1>
       {/*Implementing a visionary description of UX Design philosophy, description styling is integrated*/}
       <p className={styles.description} style={{ marginBottom: '2rem' }}>
-  I strive to make design more than just visual — it should feel personal, resonate deeply, and enhance everyday experiences. 
+  I strive to make design more than just a visual it should feel personal, resonate deeply, and enhance everyday experiences. 
   My UX philosophy bridges the gap between function and emotion, creating interfaces and visuals that are not only beautiful 
   but also impactful. Below are examples of my work in UX research, design prototyping, and user-centered innovation.
 </p>
@@ -117,9 +140,12 @@ function Projects() {
           p="Search For Friends"
         />
       </div>
+ 
     </section>
 
   );
 }
 
 export default Projects;
+
+
