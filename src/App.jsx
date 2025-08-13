@@ -1,4 +1,6 @@
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
+
 import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
@@ -33,6 +35,7 @@ function App() {
           zIndex: 9999,
         }}
       />
+           <Analytics />
             <Hero />
             <Projects />
             <Skills />
@@ -45,6 +48,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
