@@ -8,6 +8,7 @@
   --footer-text-color: #888;
   --course-card-bg: #f0f0f0;
   --scroll-color: #0987f2; 
+  --accent-color: #222; 
 }
 
 [data-theme='dark'] {
@@ -21,6 +22,7 @@
   --courseListContainer: #fff;
   --course-card-bg: #fff;
   --scroll-color: #0987f2; 
+  --accent-color: #fff; 
 }
 
 body {
@@ -111,4 +113,5 @@ p {
     }
   }
 }
+
 

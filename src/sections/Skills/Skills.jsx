@@ -3,61 +3,69 @@ import checkMarkIconDark from '../../assets/checkmark-dark.svg';
 import checkMarkIconLight from '../../assets/checkmark-light.svg';
 import SkillList from '../../common/SkillList';
 import { useTheme } from '../../common/ThemeContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faAngular } from '@fortawesome/free-brands-svg-icons'; 
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
+import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faJava } from '@fortawesome/free-brands-svg-icons';
+import { faPython } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faServer } from '@fortawesome/free-solid-svg-icons';
+import { faJira } from '@fortawesome/free-brands-svg-icons';
+import { faNotion } from '@fortawesome/free-brands-svg-icons';
+import { faFigma } from '@fortawesome/free-brands-svg-icons';
 
 function Skills() {
   const { theme } = useTheme();
   const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
-{/* Updates:
-  - Removing MongoDB
-  - Adding Project Management skills as a new layer to showcasing */}
+
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
+      
+       <div className={styles.skillsGrid}>
+
+    {/* Frontend */}
+    <div className={styles.skillCategory}>
+      <h2>Frontend</h2>
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="HTML" />
-        <SkillList src={checkMarkIcon} skill="CSS" />
-        <SkillList src={checkMarkIcon} skill="JavaScript" />
-        <SkillList src={checkMarkIcon} skill="Node" />
-         <SkillList src={checkMarkIcon} skill="WebGL" />
+        <FontAwesomeIcon icon={faHtml5} size="4x" style={{ color: "#f50000" }} />
+        <FontAwesomeIcon icon={faCss3Alt} size="4x" style={{ color: "#74C0FC" }} />
+        <FontAwesomeIcon icon={faJs} size="4x" style={{ color: "#FFD43B" }} />
+        <FontAwesomeIcon icon={faReact} size="4x" style={{ color: "#74C0FC" }} />
+        <FontAwesomeIcon icon={faAngular} size="4x" style={{ color: "#ff0033" }} />
       </div>
-      <hr />
+    </div>
+
+    {/* Backend */}
+    <div className={styles.skillCategory}>
+      <h2>Backend</h2>
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="Angular" />
+        <FontAwesomeIcon icon={faNodeJs} size="4x" style={{ color: "#00ff62" }} />
+        <FontAwesomeIcon icon={faJava} size="4x" style={{ color: "#74C0FC" }} />
+        <FontAwesomeIcon icon={faPython} size="4x" style={{ color: "#FFD43B" }} />
+        <FontAwesomeIcon icon={faDatabase} size="4x" style={{ color: "#74C0FC" }} />
+        <FontAwesomeIcon icon={faServer} size="4x" style={{ color: "#B197FC" }} />
       </div>
-      <hr />
+    </div>
+
+    {/* Tools */}
+    <div className={styles.skillCategory}>
+      <h2>Tools</h2>
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Python" />
-        <SkillList src={checkMarkIcon} skill="PHP" />
+        <FontAwesomeIcon icon={faJira} size="4x" style={{ color: "#74C0FC" }} />
+        <FontAwesomeIcon icon={faNotion} size="4x" style={{ color: "#0400ff" }} />
+        <FontAwesomeIcon icon={faFigma} size="4x" style={{ color: "#ae00ff" }} />
       </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="SQL" />
-        <SkillList src={checkMarkIcon} skill="MySQL Server/Workbench" />
-        <SkillList src={checkMarkIcon} skill="NoSQL" />
-        <SkillList src={checkMarkIcon} skill="Firebase" />
-        </div>
-       <hr />
-       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="JIRA" /> 
-        <SkillList src={checkMarkIcon} skill="Agile Workflows" />
-        <SkillList src={checkMarkIcon} skill="Notion" />
-      </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="RAG" />
-        <SkillList src={checkMarkIcon} skill="Smolagents" />
-        <SkillList src={checkMarkIcon} skill="LlamaIndex" />
-        <SkillList src={checkMarkIcon} skill="LangChain" />
-      </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Figma/FigJam" />
-        <SkillList src={checkMarkIcon} skill="Adobe Express" />
-        <SkillList src={checkMarkIcon} skill="Adobe Indesign"/>
-      </div>
+    </div>
+
+  </div>
     </section>
   );
 }
 
 export default Skills;
+

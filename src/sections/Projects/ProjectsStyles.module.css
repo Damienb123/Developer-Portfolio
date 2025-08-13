@@ -89,7 +89,7 @@ button {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   transition: background-color 0.3s ease-in-out;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* Light/Dark support */
@@ -211,4 +211,5 @@ button {
 .dark .description {
   color: #ffffff; /* Light text for dark background */
 }
+
 
