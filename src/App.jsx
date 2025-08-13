@@ -1,5 +1,4 @@
 import './App.css';
-import { Analytics } from '@vercel/analytics/react';
 import { Routes, Route } from 'react-router-dom'; // <-- Add this import
 
 import Footer from './sections/Footer/Footer';
@@ -30,7 +29,6 @@ function App() {
                 zIndex: 9999,
               }}
             />
-            <Analytics />
             <Hero />
             <Projects />
             <Skills />
@@ -43,6 +41,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
