@@ -1,6 +1,4 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom'; // <-- Add this import
-
 import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
@@ -41,6 +39,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
