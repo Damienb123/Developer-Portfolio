@@ -1,8 +1,7 @@
-// Style import for Hero
+{/*import used for styling*/}
 import styles from './HeroStyles.module.css';
-// ------------------------------------------
-// import for all images used
-// ------------------------------------------
+{/*imports for all images used*/}
+{/*---------------------------------------*/}
 import heroImg from '../../assets/image.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
@@ -10,34 +9,34 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/My Resume.pdf'; // Continuously updated
-// Use theme import for light and dark mode
-// ------------------------------------------
+import CV from '../../assets/My Resume.pdf'; {/*continuously updated if needed*/}
+{/*import for useTheme light to dark mode*/}
+{/*--------------------------------------------*/}
 import { useTheme } from '../../common/ThemeContext';
-// function call for hero content
+{/*function call for hero content*/}
 function Hero() {
-  // constant variable for theme and toggleTheme
+  {/*constant variable for theme and toggleTheme*/}
   const { theme, toggleTheme } = useTheme();
-  // constant variables for light and dark transitions
+  {/*constant variables for light and dark transitions*/}
   const themeIcon = theme === 'light' ? sun : moon;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
   return (
-    // sectioned content for hero 
+    {/*section content for hero*/}
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         
-        <img // img for profile picture
+        <img {/*img integration for profile picture*/}
           src={heroImg}
           className={styles.hero}
           alt="Profile picture of Damien Beltran"
         />
         <img
-          className={styles.colorMode} // colorMode for light and dark transitioning
+          className={styles.colorMode} {/*colorMode class for functional sun/moon toggle transition*/}
           src={themeIcon}
           alt="Color mode icon"
-          onClick={toggleTheme} // toggle from light to dark mode
+          onClick={toggleTheme} {/*toggle from light to dark*/}
         />
       </div>
       <div className={styles.info}>
@@ -71,6 +70,7 @@ function Hero() {
 }
 
 export default Hero;
+
 
 
 
