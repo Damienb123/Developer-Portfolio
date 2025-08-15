@@ -23,7 +23,6 @@ function Hero() {
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
   return (
-    {/*section content for hero*/}
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         
@@ -70,6 +69,7 @@ function Hero() {
 }
 
 export default Hero;
+
 
 
 
