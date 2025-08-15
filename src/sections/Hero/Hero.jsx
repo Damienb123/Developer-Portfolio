@@ -27,16 +27,16 @@ function Hero() {
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         
-        <img {/*img integration for profile picture*/}
+        <img 
           src={heroImg}
           className={styles.hero}
           alt="Profile picture of Damien Beltran"
         />
         <img
-          className={styles.colorMode} {/*colorMode class for functional sun/moon toggle transition*/}
+          className={styles.colorMode} 
           src={themeIcon}
           alt="Color mode icon"
-          onClick={toggleTheme} {/*toggle from light to dark*/}
+          onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>
@@ -70,6 +70,7 @@ function Hero() {
 }
 
 export default Hero;
+
 
 
 
