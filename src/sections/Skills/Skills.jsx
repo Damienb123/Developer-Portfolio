@@ -1,8 +1,14 @@
+{/*import for styling*/}
+{/*-------------------------------*/}
 import styles from './SkillsStyles.module.css';
+{/*import for image use*/}
+{/*-------------------------------*/}
 import checkMarkIconDark from '../../assets/checkmark-dark.svg';
 import checkMarkIconLight from '../../assets/checkmark-light.svg';
 import SkillList from '../../common/SkillList';
 import { useTheme } from '../../common/ThemeContext';
+{/*fontawesome integration and image use*/}
+{/*-------------------------------*/}
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faAngular } from '@fortawesome/free-brands-svg-icons'; 
@@ -17,11 +23,12 @@ import { faServer } from '@fortawesome/free-solid-svg-icons';
 import { faJira } from '@fortawesome/free-brands-svg-icons';
 import { faNotion } from '@fortawesome/free-brands-svg-icons';
 import { faFigma } from '@fortawesome/free-brands-svg-icons';
-
+{/*function call for skills section*/}
 function Skills() {
+  {/*constant variables using useTheme*/}
   const { theme } = useTheme();
   const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
-
+  {/*starting the section for skills*/}
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
@@ -68,4 +75,5 @@ function Skills() {
 }
 
 export default Skills;
+
 
