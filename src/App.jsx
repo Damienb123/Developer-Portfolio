@@ -1,4 +1,5 @@
 import './App.css';
+{/*imports for vercel anaylitics, react router, sections of web page integration, and framer motion*/}
 import { Analytics } from '@vercel/analytics/react';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './sections/Footer/Footer';
@@ -11,7 +12,7 @@ function App() {
 
   
 
-
+  {/*constant variable for progression bar on scroll | styling included*/}
   const { scrollYProgress } = useScroll();
   return (
 
@@ -48,5 +49,6 @@ function App() {
 }
 
 export default App;
+
 
 
