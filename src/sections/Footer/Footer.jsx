@@ -1,5 +1,6 @@
+{/*style import for footer*/}
 import styles from './FooterStyles.module.css';
-
+{/*function for footer content*/}
 function Footer() {
   return (
     <section id="footer" className={styles.container}>
@@ -12,3 +13,6 @@ function Footer() {
 }
 
 export default Footer;
+
+
+
