@@ -18,9 +18,9 @@ import FoodieMockup from '../../assets/FoodieMockup.png';
 import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png';
 
 {/*Function call for projects section*/}
+ {/*section creation for academia and projects content containerization*/}
 function Projects() {
   return (
-    {/*section creation for academia and projects content containerization*/}
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Academic Journey</h1>
       {/*Current Course Schedule*/}
@@ -148,6 +148,7 @@ function Projects() {
 }
 
 export default Projects;
+
 
 
 
