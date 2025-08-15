@@ -1,9 +1,9 @@
-// Style import for Footer
+{/*style import for footer*/}
 import styles from './FooterStyles.module.css';
-// Function for footer content
+{/*function for footer content*/}
 function Footer() {
   return (
-    // Section for footer content containerized
+    {/*section for footer containerized*/}
     <section id="footer" className={styles.container}>
       <p>
         &copy; 2025 Damien Beltran. <br />
@@ -14,4 +14,5 @@ function Footer() {
 }
 
 export default Footer;
+
 
