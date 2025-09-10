@@ -1,23 +1,24 @@
+{/*imports used for image use for all projects*/}
+{/*------------------------------------------*/}
 import styles from './ProjectsStyles.module.css';
 import smolagent from '../../assets/smolagent.png';
-import loginscreen from '../../assets/Loginscreen.png'; // Saved for displaying UX design
-import soundwave from '../../assets/SoundWavelogo.png'; // Saved for displaying UX design
+import loginscreen from '../../assets/Loginscreen.png'; 
+import soundwave from '../../assets/SoundWavelogo.png'; 
 import linerenderer from '../../assets/LineRenderingApp.png';
 import ProjectCard from '../../common/ProjectCard';
 import developerjourney from '../../assets/DevelopersJourney.png';
 import foodie from '../../assets/FoodiePage.png';
-import DigitalWave from '../../assets/DigitalWave.png'; // New import for DigitalWave
-import recipeorganizer from '../../assets/recipeorganizer.png'; // New import for Recipe Organizer
-import personallogo from '../../assets/personallogo.png'; // New import for Personal Logo
+import DigitalWave from '../../assets/DigitalWave.png'; 
+import recipeorganizer from '../../assets/recipeorganizer.png'; 
+import personallogo from '../../assets/personallogo.png'; 
+import Soundwaveprototypes from '../../assets/Soundwaveprototypes.png'; 
+import UXresearchstudy from '../../assets/UXresearchstudy.png'; 
+import Mealswipes from '../../assets/Mealswipes.png'; 
+import FoodieMockup from '../../assets/FoodieMockup.png'; 
+import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png';
 
-import Soundwaveprototypes from '../../assets/Soundwaveprototypes.png'; // New import for Soundwave prototypes
-import UXresearchstudy from '../../assets/UXresearchstudy.png'; // New import for UX research study
-import Mealswipes from '../../assets/Mealswipes.png'; // New import for Mealswipes
-import FoodieMockup from '../../assets/FoodieMockup.png'; // New import for Foodie mockup
-import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png'; // New import for LePal.ai new feature
-
-
-
+{/*Function call for projects section*/}
+ {/*section creation for academia and projects content containerization*/}
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
@@ -147,5 +148,7 @@ function Projects() {
 }
 
 export default Projects;
+
+
 
 
