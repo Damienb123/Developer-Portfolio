@@ -1,7 +1,7 @@
 import styles from './ProjectsStyles.module.css';
 import smolagent from '../../assets/smolagent.png';
 import bias_analysis from '../../assets/bias_analysis.png'; // Newly added png
-import pagingvirtualmemory from '../../assets/pagingvirtualmemory.png' // Newly added png
+import pagingvirtualmemory from '../../assets/pagingvirtualmemory.png'; // Newly added png
 import loginscreen from '../../assets/Loginscreen.png'; // Saved for displaying UX design
 import soundwave from '../../assets/SoundWavelogo.png'; // Saved for displaying UX design
 import linerenderer from '../../assets/LineRenderingApp.png';
@@ -175,6 +175,7 @@ function Projects() {
 }
 
 export default Projects;
+
 
 
 
