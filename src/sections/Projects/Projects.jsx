@@ -53,7 +53,7 @@ function Projects() {
        data to study bias mitigation, demographic fairness, and interpretability in healthcare AI systems. This project integrated retrieval-augmented workflows, 
        demographic filtering, and visual analytics to surface how race, age, gender, and ZIP code influence model behavior and recommendations.
       </p>
-      <div className={styles.projectContainer}>
+      <div className={styles.projectsContainer}>
       <ProjectCard
           src={smolagent}
           link="https://github.com/Damienb123/smolagent-training-model"
@@ -168,6 +168,7 @@ function Projects() {
 }
 
 export default Projects;
+
 
 
 
