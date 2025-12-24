@@ -1,5 +1,6 @@
 import styles from './ProjectsStyles.module.css';
 import smolagent from '../../assets/smolagent.png';
+import bias_analysis from '../../assets/bias_analysis.png'; // Newly added png
 import loginscreen from '../../assets/Loginscreen.png'; // Saved for displaying UX design
 import soundwave from '../../assets/SoundWavelogo.png'; // Saved for displaying UX design
 import linerenderer from '../../assets/LineRenderingApp.png';
@@ -35,22 +36,47 @@ function Projects() {
      <div className={styles.courseListContainer}>
       <h2 className={styles.courseListTitle}>Fall 2025 Course Schedule</h2>
       <ul className={styles.courseList}>
-        <li>CS 4423 - Game Development</li>
         <li>CS 4673 - Cyber Operations</li>
-        <li>CS 4953 - CodePath Tech Interview Prep</li>
+        <li>CS 4333 - Probability and Computing</li>
         <li>CS 4913 - Independent Study "LLM and Data Managment"</li>
         <li>SOC 3323 - Intro to Social Research</li>
       </ul>
     </div>
+
+       {/*Adding recent work in Artificial intelligence to showcase*/}
+      <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Artificial Intelligence</h1>
+      <p className={styles.description} style={{ marginBottom: '2rem' }}>
+       My work explores the development of agentic AI systems with a focus on real-world impact, interpretability, and responsible deployment. 
+       I began by earning certification in AI agent development through Hugging Face, where I built my first intelligent agent using the smolagents 
+       framework to generate contextual party-planning recommendations.
+       In my most recent research, I designed and evaluated a clinical QA agent pipeline using Electronic Health Record (EHR) 
+       data to study bias mitigation, demographic fairness, and interpretability in healthcare AI systems. This project integrated retrieval-augmented workflows, 
+       demographic filtering, and visual analytics to surface how race, age, gender, and ZIP code influence model behavior and recommendations.
+      </p>
+      <div className={styles.projectContainer}>
+      <ProjectCard
+          src={smolagent}
+          link="https://github.com/Damienb123/smolagent-training-model"
+          h3="AI-Training Model"
+          p="SmolAgents AI Training Model"
+        />
+        <ProjectCard
+          src={bias_analysis}
+          link="https://github.com/Damienb123/Bias-Mitigation-Research"
+          h3="AI and Data Management in The Medical Field"
+          p="Independent Study Research"
+        />
+        </div>
+     
+      
       {/*Adding symetrically vertical alignment between the SD and UX containers*/}
-      <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Software Development Projects</h1>
+      <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Software Development</h1>
       {/*Implementing a visionary description of software development processes, description styling is integrated*/}
       <p className={styles.description} style={{ marginBottom: '2rem' }}>
     I am passionate about building scalable, maintainable software with an emphasis on teamwork and clear communication. 
     As a software developer, I prioritize clean architecture, efficient collaboration, and thoughtful UX design to create 
     seamless, user-centric experiences. Below are highlights of my work in software development and UX design.
-  </p>
-    
+  </p>  
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={foodie}
@@ -70,12 +96,6 @@ function Projects() {
           h3="WebGL Line Renderer"
           p="Interactive Line Rendering App" 
         />
-        <ProjectCard
-          src={smolagent}
-          link="https://github.com/Damienb123/smolagent-training-model"
-          h3="AI-Training Model"
-          p="SmolAgents AI Training Model"
-        />
          <ProjectCard
           src={DigitalWave}
           link="https://github.com/Damienb123/Login-Page"
@@ -89,13 +109,14 @@ function Projects() {
           p="MySQL Database for Recipe Organizer"
         />
       </div>
+
       {/* Updates:
       - Adding the UX Projects section
       - Displaying relevant projects
       - Users can view prototypes and case study interactively
       - Added whitespace of 8rem between the two sections */}
       {/*Adding symetrically vertical alignment between the SD and UX containers*/}
-      <h1 className="sectionTitle" style={{ marginTop: '8rem', marginBottom: '2rem' }} >UX Projects</h1>
+      <h1 className="sectionTitle" style={{ marginTop: '8rem', marginBottom: '2rem' }} >UX/UI</h1>
       {/*Implementing a visionary description of UX Design philosophy, description styling is integrated*/}
       <p className={styles.description} style={{ marginBottom: '2rem' }}>
   I strive to make design more than just a visual it should feel personal, resonate deeply, and enhance everyday experiences. 
@@ -147,5 +168,6 @@ function Projects() {
 }
 
 export default Projects;
+
 
 

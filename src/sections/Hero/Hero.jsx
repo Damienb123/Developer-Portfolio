@@ -38,7 +38,7 @@ function Hero() {
           Beltran
         </h1>
         <h2>
-          Senior Computer Science Student at UTSA,
+          Recently Graduated with Bachelor's of Computer Science at UTSA,
           <br />
           Previous Full-Stack Software Engineer Intern
         </h2>
@@ -62,6 +62,7 @@ function Hero() {
 }
 
 export default Hero;
+
 
 
 
