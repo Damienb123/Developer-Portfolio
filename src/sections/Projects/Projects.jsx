@@ -75,7 +75,7 @@ function Projects() {
      
       
       {/*Adding symetrically vertical alignment between the SD and UX containers*/}
-      <h1 className="sectionTitle" style={{ marginBottom: '2rem' }} >Software Development</h1>
+      <h1 className="sectionTitle" style={{ marginTop: '4rem' }} >Software Development</h1>
       {/*Implementing a visionary description of software development processes, description styling is integrated*/}
       <p className={styles.description} style={{ marginBottom: '2rem' }}>
     I am passionate about building scalable, maintainable software with an emphasis on teamwork and clear communication. 
@@ -179,6 +179,7 @@ function Projects() {
 }
 
 export default Projects;
+
 
 
 
