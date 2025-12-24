@@ -54,6 +54,16 @@ function Projects() {
        demographic filtering, and visual analytics to surface how race, age, gender, and ZIP code influence model behavior and recommendations.
       </p>
       <div className={styles.projectsContainer}>
+        {/*Specific styling for centering in this particular section*/}
+         style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+    gap: 32,
+    justifyContent: "center",
+    maxWidth: 1100,
+    margin: "0 auto", 
+    padding: 32,
+  }}
       <ProjectCard
           src={smolagent}
           link="https://github.com/Damienb123/smolagent-training-model"
@@ -168,6 +178,7 @@ function Projects() {
 }
 
 export default Projects;
+
 
 
 
