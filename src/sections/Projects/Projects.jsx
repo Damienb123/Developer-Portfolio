@@ -67,6 +67,10 @@ function Projects() {
           h3="AI and Data Management in The Medical Field"
           p="Independent Study Research"
         />
+        {/*Place holder for next project*/}
+        <h2 className="coming-soon" style={{ marginTop: '5rem' }}>
+            New Project Coming Soon!
+          </h2>
         </div>
      
       
@@ -175,6 +179,7 @@ function Projects() {
 }
 
 export default Projects;
+
 
 
 
