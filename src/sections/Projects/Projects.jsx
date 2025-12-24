@@ -110,7 +110,7 @@ function Projects() {
           p="MySQL Database for Recipe Organizer"
         />
         <ProjectCard
-          src={paginingvirtualmemory}
+          src={pagingvirtualmemory}
           link="https://github.com/Damienb123/paging_virtual_memory"
           h3="Paging Virtual Memory"
           p="Simulating Operating Systems Memory Management"
@@ -175,6 +175,7 @@ function Projects() {
 }
 
 export default Projects;
+
 
 
 
