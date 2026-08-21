@@ -16,6 +16,7 @@ import Mealswipes from '../../assets/Mealswipes.png';
 import FoodieMockup from '../../assets/FoodieMockup.png';
 import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png';
 import AIWeatherAgent from '../../assets/ai-weather-agent.png';
+import DriftDetection from '../../assets/drift_detection.png';
 import { aiResearchSection as research } from './aiResearchSection';
 
 const researchCards = [
@@ -61,12 +62,12 @@ const devProjects = [
     tags: ['React', 'MySQL', 'Team'],
   },
   {
-    src: developerjourney,
-    link: 'https://github.com/Damienb123/developer-journey',
-    h3: 'Developer Journey',
-    p: 'Personal blog',
-    summary: 'Articles and notes on learning full-stack development.',
-    tags: ['React', 'Content'],
+    src: DriftDetection,
+    link: 'https://github.com/Damienb123/Documentation-Drift-Detector',
+    h3: 'Documentation Drift Detector',
+    p: 'VS Code Extension',
+    summary: 'Developer tool that detects code and documentation drift before the next release. Currently used by 80+ developers since first release.',
+    tags: ['TypeScript', 'Playwright', 'GitHub Actions', 'Codex'],
   },
   {
     src: linerenderer,
@@ -227,4 +228,3 @@ function Projects() {
 }
 
 export default Projects;
-
