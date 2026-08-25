@@ -17,6 +17,7 @@ import FoodieMockup from '../../assets/FoodieMockup.png';
 import LePalaiNewFeature from '../../assets/LePalaiNewFeature.png';
 import AIWeatherAgent from '../../assets/ai-weather-agent.png';
 import DriftDetection from '../../assets/drift_detection.png';
+import AIInferenceSystem from '../../assets/AI_rag_sys.png';
 import { aiResearchSection as research } from './aiResearchSection';
 
 const researchCards = [
@@ -49,6 +50,14 @@ const aiProjects = [
     p: 'AI Weather Agent',
     summary: 'An AI agent that supports users intuitively checking what the weather is like in real time using a public API.',
     tags: ['Python', 'React', 'Vite', 'MCP Server', 'OpenWeather API', 'OpenAI API'],
+  },
+  {
+    src: AIInferenceSystem,
+    link: 'https://github.com/Damienb123/AI-Inference-RAG-System',
+    h3: 'Distributed AI inference system',
+    p: 'AI Inference RAG System',
+    summary: 'A sytem that processes asynchronous AI requests, distributes workloads across worker nodes, and supports scalable Retrieval-Augmented Generation RAG pipelines.',
+    tags: ['Python', 'FastAPI', 'Uvicorn', 'Redis', 'RQ Workers', 'OpenAI API', 'Pinecone', 'RAG', 'AWS'],
   },
 ];
 
